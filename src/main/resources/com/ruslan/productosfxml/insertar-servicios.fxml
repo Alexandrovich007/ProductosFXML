@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="450.0" prefWidth="806.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ruslan.productosfxml.InsertarServiciosController">
+    <children>
+        <Label layoutX="73.0" layoutY="59.0" text="Fecha de Registro" />
+        <TextField editable="false" layoutX="368.0" layoutY="334.0" />
+        <Button fx:id="button_grabar" layoutX="361.0" layoutY="388.0" mnemonicParsing="false" onAction="#grabarProducto" prefHeight="36.0" prefWidth="101.0" text="Insertar" />
+        <ComboBox fx:id="cmbCategorias" layoutX="627.0" layoutY="90.0" prefWidth="150.0" />
+        <Label layoutX="494.0" layoutY="59.0" text="Producto" />
+        <Label layoutX="75.0" layoutY="158.0" text="ID" />
+        <Label layoutX="674.0" layoutY="59.0" text="Categorias" />
+        <Label layoutX="75.0" layoutY="195.0" text="NOMBRE" />
+        <Label layoutX="75.0" layoutY="228.0" text="PRECIO" />
+        <Label layoutX="75.0" layoutY="263.0" text="CATEGORIA" />
+        <Label layoutX="379.0" layoutY="230.0" text="POBLACION" />
+        <Label layoutX="257.0" layoutY="338.0" text="TOTAL SERVICIO" />
+        <Label layoutX="382.0" layoutY="160.0" text="NIF" />
+        <ComboBox fx:id="cmbProducto" layoutX="430.0" layoutY="90.0" onAction="#initCombos" prefHeight="2.0" prefWidth="175.0" />
+        <TextField fx:id="txtDirCli" editable="false" layoutX="467.0" layoutY="191.0" />
+        <TextField fx:id="txtNIFCli" editable="false" layoutX="467.0" layoutY="154.0" />
+        <TextField fx:id="tf_categoria" editable="false" layoutX="196.0" layoutY="259.0" />
+        <TextField fx:id="tf_precio" editable="false" layoutX="196.0" layoutY="224.0" />
+        <TextField fx:id="tf_nombre" editable="false" layoutX="196.0" layoutY="191.0" />
+        <TextField fx:id="tf_id" editable="false" layoutX="196.0" layoutY="154.0" />
+        <Label layoutX="381.0" layoutY="197.0" text="DIRECCION" />
+        <TextField fx:id="txtPobCli" editable="false" layoutX="467.0" layoutY="226.0" />
+        <DatePicker fx:id="dtpFechaRegistro" layoutX="24.0" layoutY="90.0" />
+        <DatePicker fx:id="dtpFechaEntrega" layoutX="214.0" layoutY="90.0" />
+        <Label layoutX="253.0" layoutY="59.0" text="Fecha Entrega" />
+    </children>
+
+</AnchorPane>

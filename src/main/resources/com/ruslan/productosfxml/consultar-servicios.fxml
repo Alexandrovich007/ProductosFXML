@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="450.0" prefWidth="806.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ruslan.productosfxml.ConsultarServiciosController">
+    <children>
+        <DatePicker fx:id="dtpFechaInicial" layoutX="26.0" layoutY="73.0" />
+        <ComboBox fx:id="cmbProductos" layoutX="258.0" layoutY="73.0" prefHeight="18.0" prefWidth="216.0" />
+        <Label layoutX="73.0" layoutY="41.0" text="Fecha de Reisgtro" />
+        <Label layoutX="339.0" layoutY="41.0" text="Productos" />
+        <Label layoutX="572.0" layoutY="41.0" text="FECHA FINAL" />
+        <TableView fx:id="tblServicios" layoutX="32.0" layoutY="157.0" prefHeight="200.0" prefWidth="506.0">
+            <columns>
+                <TableColumn fx:id="col_id" prefWidth="75.0" text="ID" />
+                <TableColumn fx:id="col_nombre" prefWidth="134.0" text="NOMBRE" />
+                <TableColumn fx:id="colPrecio" prefWidth="69.0" text="PRECIO" />
+                <TableColumn fx:id="colFechaRegistro" prefWidth="114.0" text="FECHA REGISTRO" />
+                <TableColumn fx:id="colCategoria" minWidth="0.0" prefWidth="109.0" text="CATEGORIA" />
+            </columns>
+        </TableView>
+        <DatePicker fx:id="dtpFechaFinal" layoutX="504.0" layoutY="73.0" prefHeight="26.0" prefWidth="207.0" />
+    </children>
+
+
+
+</AnchorPane>
