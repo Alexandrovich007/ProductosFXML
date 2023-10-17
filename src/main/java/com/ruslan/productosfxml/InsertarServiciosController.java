@@ -62,9 +62,17 @@ public class InsertarServiciosController implements Initializable {
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
-
+        //initCombos();
     }
 
+    public void initCombos(){
+
+        Repositorio<Producto> repo = new ProductoImplementarRepo();
+        ObservableList<Producto> obs = repo.listarProductos();
+        this.cmbProducto.setItems(obs);
+
+
+    }
 
 
 

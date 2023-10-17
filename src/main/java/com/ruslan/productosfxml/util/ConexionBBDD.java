@@ -15,7 +15,7 @@ public class ConexionBBDD {
 
         if(conexion == null) {
             Properties configuration = new Properties();
-            try (FileInputStream fis = new FileInputStream("C:/Users/Ruslan/IdeaProjects/productosFXML/src/main/resources/configuration/database.properties")) {
+            try (FileInputStream fis = new FileInputStream("src/main/resources/configuration/database.properties")) {
                 configuration.load(fis);
             }
             String host = configuration.getProperty("host");
